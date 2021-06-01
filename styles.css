@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 25px 75px 25px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  padding: 0 0 25px;
+}
+
+h2,
+h1 {
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mockup__contanier {
+  position: relative;
+  max-width: 960px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+@keyframes imageScroll {
+  from {
+    background-position: top;
+  }
+  to {
+    background-position: bottom;
+  }
+}
+
+.scrollable__image {
+  position: absolute;
+  top: 13.5%;
+  left: 13.5%;
+  width: 73.4%;
+  height: 68%;
+  background-size: 100%;
+  overflow: hidden;
+  background-position: top;
+  animation: imageScroll 12s ease-in-out alternate infinite paused;
+}
+
+.scrollable__image:hover {
+  animation-play-state: running;
+  cursor: crosshair;
+}
+
+.scrollable__image--yummy {
+  background-image: url("www.yummypixels.co.uk_.png");
+}
+
+.scrollable__image--karma {
+  background-image: url("karma-fitness-screenshot.png");
+}
+
+.scrollable__image--china {
+  background-image: url("taste-of-china-screenshot.png");
+}
